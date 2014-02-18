@@ -132,8 +132,8 @@ tt {
 
 pre {
 	white-space: pre;
-	@include font-margin-top($mono-font-size, 1 / ($body-font-size * 16) * 1em);
-	@include font-margin-bottom($mono-font-size, 1 / ($body-font-size * 16) * 1em);
+	@include font-margin-top($mono-font-size, 1 / ($body-font-size * 16));
+	@include font-margin-bottom($mono-font-size, 1 / ($body-font-size * 16));
 	@include font-line-height($mono-font-size);
 
 	position: relative;

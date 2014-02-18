@@ -8,7 +8,7 @@
 @mixin table-padded() {
 	th,
 	td {
-		padding-top: ceiling($body-line-height-px * 0.25 * 1px);
+		padding-top: ceil($body-line-height-px * 0.25 * 1px);
 		padding-bottom: floor($body-line-height-px * 0.25 * 1px);
 		padding-left: $line-height * 0.5em;
 		padding-right: $line-height * 0.5em;

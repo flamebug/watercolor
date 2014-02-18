@@ -50,7 +50,7 @@ $body-line-height-px: ($body-font-size-px * $line-height);
 }
 
 @mixin font-line-height($size) {
-	line-height: (ceiling(($body-font-size-px * $size) / ($line-height * $body-font-size-px)) * ($line-height * $body-font-size-px)) / ($size * $body-font-size-px);
+	line-height: (ceil(($body-font-size-px * $size) / ($line-height * $body-font-size-px)) * ($line-height * $body-font-size-px)) / ($size * $body-font-size-px);
 }
 
 @mixin font-margin-top($size, $adjust: 0) {
