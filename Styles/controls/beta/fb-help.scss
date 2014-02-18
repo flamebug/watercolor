@@ -1,0 +1,15 @@
+/*
+=========================================
+flamebug:Help
+=========================================
+*/
+
+.fb-help {
+	position: relative;
+	display: inline;
+}
+
+.fb-help:hover .fb-tooltip {
+	display: block;
+	visibility: visible;
+}

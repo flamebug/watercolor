@@ -1,0 +1,62 @@
+//
+// Badge
+//
+
+@mixin badge {
+	display: inline-block;
+	overflow: visible;
+	padding: 0 .5em;
+	
+	position: absolute;
+	top: -12px;
+	bottom: auto;
+	right: -12px;
+	left: auto;
+	z-index: 1;
+
+	background-color: #b44;
+	border: 2px solid #fff;
+	box-shadow: 0 0 0 1px rgba(0,0,0,0.05);
+	border-radius: 1em;
+
+	color: #FFF !important;			/* prevent inheriting link colors */
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.1);
+	text-decoration: none;
+	font-size: .75em;
+
+	&:empty {
+		display: none;
+	}
+}
+
+@mixin badge-top-right {
+	position: absolute;
+	top: -12px;
+	bottom: auto;
+	right: -12px;
+	left: auto;
+}
+
+@mixin badge-top-left {
+	position: absolute;
+	top: -12px;
+	bottom: auto;
+	right: auto;
+	left: -12px;
+}
+
+@mixin badge-bottom-right {
+	position: absolute;
+	top: auto;
+	bottom: -12px;
+	right: -12px;
+	left: auto;
+}
+
+@mixin badge-bottom-left {
+	position: absolute;
+	top: auto;
+	bottom: -12px;
+	right: auto;
+	left: -12px;
+}

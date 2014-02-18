@@ -1,0 +1,19 @@
+/*
+base/table.scss
+*/
+
+@import "../library/table.scss";
+
+table {
+	&.padded {
+		@include table-padded;
+	}
+
+	&.bordered {
+		@include table-bordered;
+	}
+
+	&.striped {
+		@include table-striped;
+	}
+}

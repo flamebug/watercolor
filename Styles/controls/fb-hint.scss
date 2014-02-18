@@ -1,0 +1,68 @@
+/*
+controls/fb-hint.scss
+*/
+
+@import "../global.scss";
+@import "../library/helpers.scss";
+
+//
+// Hint
+//
+
+.hint {
+	@include box-sizing(border-box);
+	position: absolute;
+	display: inline-block;
+	visibility: hidden;
+	opacity: 0;
+	background: #444;
+	color: #fff;
+	padding: .25em .5em;
+	margin-left: .75em;
+	text-align: center;
+	-webkit-transition: all .25s linear;
+	-moz-transition: all .25s linear;
+	-ms-transition: all .25s linear;
+	-o-transition: all .25s linear;
+	transition: all .25s linear;
+	z-index: 1;
+
+	&:before {
+		content: " ";
+		position: absolute;
+		top: 1em;
+		left: -14px;
+		opacity: 0;
+		width: 0;
+		height: 0;
+		margin-top: -7px;
+		border-width: 7px;
+		border-style: solid;
+		border-color: #444;
+		border-top-color: transparent;
+		border-left-color: transparent;
+		border-bottom-color: transparent;
+		-webkit-transition: all .25s linear;
+		-moz-transition: all .25s linear;
+		-ms-transition: all .25s linear;
+		-o-transition: all .25s linear;
+		transition: all .25s linear;
+	}
+}
+
+*:invalid + .hint {
+	background: red;
+
+	&:before {
+		border-right-color: red;
+	}
+}
+
+*:focus + .hint {
+	visibility: visible;
+	opacity: 1;
+
+	&:before {
+		opacity: 1;
+	}
+}

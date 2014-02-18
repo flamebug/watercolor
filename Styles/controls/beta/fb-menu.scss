@@ -1,0 +1,106 @@
+/*
+=========================================
+flamebug:Menu
+=========================================
+*/
+
+.fb-menu {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+.fb-menu li {
+	display: inline-block;
+	margin: 0;
+	padding: .6em 2em;
+	list-style: none;
+}
+
+.fb-menu a {
+	display: block;
+	padding: 0;
+	text-decoration:none;
+}
+
+.fb-menu a:link, .fb-menu a:visited, .fb-menu a:active {
+	color: #666;
+}
+
+.fb-menu a:hover {
+	color: #68b;
+}
+
+.fb-menu #current { 
+}
+
+.fb-menu #current a {
+}
+
+.fb-menu li:hover {
+	position: relative;
+}
+
+.fb-menu li:hover a {
+	/*position: relative;*/
+}
+
+/* Dynamic dropdown menu */
+
+.fb-menu ul {
+	position:absolute;
+	display:none;
+
+	z-index:500;
+	top:auto;
+
+	width: 10em;
+	margin: 0;
+	padding: 0;
+
+	border-radius: .3em;
+	-moz-border-radius: .3em;
+	-webkit-border-radius: .3em;
+	-moz-box-shadow: 0 0 .2em 0 rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0 0 .2em 0 rgba(0,0,0,0.1);
+
+	background: rgba(240,242,245,0.75);
+}
+
+.fb-menu li li {
+	display: block;
+	margin: 0;
+	padding: .25em 1em;
+	text-align: left;
+}
+
+.fb-menu li li a:link, .fb-menu li li a:visited, .fb-menu li li a:active {
+}
+
+/* Slideout dynamic menus */
+
+.fb-menu ul ul {
+	top:0;
+	left:100%;
+	margin-left: -.25em;
+}
+
+.fb-menu li:hover ul ul, .fb-menu li li:hover ul ul, .fb-menu li li li:hover ul ul, .fb-menu li li li li:hover ul ul {
+	display:none;
+}
+
+.fb-menu li:hover ul, .fb-menu li li:hover ul, .fb-menu li li li:hover ul, .fb-menu li li li li:hover ul {
+	display:block;
+}
+
+.fb-menu li.top_parent, .fb-menu li.top_parent:hover {	/* attaches down-arrow to all top-parents */
+	background-image: url(./Image/controls/menu_downarrow.gif);
+	background-position: 85% center;
+	background-repeat: no-repeat;
+}
+	
+.fb-menu li.parent, .fb-menu li.parent:hover {		/* attaches side-arrow to all parents */
+	background-image: url(./Image/controls/menu_rightarrow.gif);
+	background-position: 95% center;
+	background-repeat: no-repeat;
+}

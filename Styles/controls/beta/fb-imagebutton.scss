@@ -1,0 +1,53 @@
+/*
+=========================================
+flamebug:ImageButton
+=========================================
+*/
+
+.fb-imagebutton {
+	display: inline-block;
+}
+.fb-imagebutton figure {
+	position: relative;
+	height: 100%;
+	margin: -1px;
+	padding: 0;
+	border: 1px solid rgba(0,0,0,.25);
+}
+
+.fb-imagebutton figure img {
+	display: block;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.fb-imagebutton figcaption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: .5em .75em;
+
+	background-color: rgba(0,0,0,0.6);
+	font-size: .8em;
+	font-weight: bold;
+	text-shadow: none;
+	color: white;
+
+	opacity: 0;
+	-webkit-transition: opacity 0.3s ease-out;
+	-moz-transition: opacity 0.3s ease-out;
+	-ms-transition: opacity 0.3s ease-out;
+	-o-transition: opacity 0.3s ease-out;
+	transition: opacity 0.3s ease-out;
+}
+
+.fb-imagebutton figure:hover figcaption {
+	opacity: 1;
+}
+
+.fb-imagebutton.fb-imagebuttonselected figure {
+	margin: -5px;
+	border: 5px solid #68B;
+}

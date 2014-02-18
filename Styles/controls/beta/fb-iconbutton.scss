@@ -1,0 +1,78 @@
+/*
+=========================================
+flamebug:IconButton
+=========================================
+*/
+
+.fb-iconbutton {
+	display: inline-block;
+	text-align: center;
+}
+
+.fb-iconbutton img {
+	display: block;
+	max-width: 100%;
+	vertical-align: middle;
+	margin: 2px auto;
+	padding: 0;
+}
+
+.fb-iconbutton span img {
+	display: inline;
+}
+
+.fb-iconbutton span:first-child {
+	display: block;
+}
+
+.fb-iconbutton span:last-child {
+	display: inline-block;
+	margin: .8125em auto;
+	padding: 0 .75em;
+}
+
+.fb-iconbutton, .fb-iconbutton:link, .fb-iconbutton:visited, .fb-iconbutton:active {
+	color: #666;
+	text-align: center;
+}
+
+.fb-iconbutton:hover {
+	position: relative;
+	color: #f0f0f0; 
+	border: 0;				/* Needed for IE to display the ToolTip */
+}
+
+.fb-iconbutton:hover span:last-child {
+	background: rgba(100, 110, 120, 0.5);
+	border-radius: .5em;
+	-moz-border-radius: .5em;
+	-webkit-border-radius: .5em;
+	
+	-webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.25);
+	-mox-box-shadow: 0 3px 3px rgba(0,0,0,0.25);
+	box-shadow: 0 3px 3px rgba(0,0,0,0.25);
+}
+
+.fb-iconbutton[disabled] {
+	opacity: 0.3;
+	cursor: default;
+}
+
+.fb-iconbuttonselected, .fb-iconbuttonselected:link, .fb-iconbuttonselected:visited, .fb-iconbuttonselected:active {
+	color: #f2f2f2;
+}
+
+.fb-iconbuttonselected span:last-child {
+	background: rgb(68, 102, 153);
+	border-radius: .5em;
+	-moz-border-radius: .5em;
+	-webkit-border-radius: .5em;
+	
+	-webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.25);
+	-mox-box-shadow: 0 3px 3px rgba(0,0,0,0.25);
+	box-shadow: 0 3px 3px rgba(0,0,0,0.25);
+}
+
+.fb-iconbutton.aspNetDisabled {
+	opacity: 0.5;
+}

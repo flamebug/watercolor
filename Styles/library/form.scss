@@ -1,0 +1,150 @@
+@import "../global.scss";
+@import "../library/grid.scss";
+
+//
+// Block Field
+//
+
+@mixin field-block() {
+	position: relative;
+	float: none;
+	display: block;
+	margin: $line-height * 1em 0;
+	padding: 0;
+
+	& label {
+		position: relative;
+		top: auto;
+		left: auto;
+		display: block;
+		width: auto;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	.hint {
+		top: auto;
+		margin: 0;
+		margin-left: .75em;
+
+		&:before {
+			top: 1em;
+			left: -14px;
+			margin-top: -7px;
+			margin-left: 0;		
+			border-top-color: transparent;
+			border-left-color: transparent;
+			border-right-color: #444;
+			border-bottom-color: transparent;
+		}
+	}
+
+	input:invalid + .hint:before {
+		border-right-color: red;
+		border-bottom-color: transparent;
+	}
+}
+
+//
+// Inline Field
+//
+
+@mixin field-inline() {
+	position: relative;
+	float: left;
+	display: block;
+	margin: $line-height * 1em $line-height * 1em 0 0;
+	padding: 0;
+
+	&:last-child {
+		margin-bottom: $line-height * 1em;
+	}
+
+	& label {
+		position: relative;
+		top: auto;
+		left: auto;
+		display: block;
+		width: auto;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	.hint {
+		top: 100%;
+		margin: 0;
+		margin-top: .75em;
+
+		&:before {
+			top: -14px;
+			left: 50%;
+			margin-top: 0;
+			margin-left: -7px;
+			border-top-color: transparent;
+			border-left-color: transparent;
+			border-right-color: transparent;
+			border-bottom-color: #444;
+		}
+	}
+
+	input:invalid + .hint:before {
+		border-right-color: transparent;
+		border-bottom-color: red;
+	}
+}
+
+//
+// Aligned Field
+//
+
+@mixin field-align() {
+	position: relative;
+	float: none;
+	display: block;
+	margin: $line-height * 1em 0;
+	padding: 0 0 0 25%;
+
+	& label {
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: block;
+		width: 25%;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	.hint {
+		top: auto;
+		margin: 0;
+		margin-left: .75em;
+
+		&:before {
+			top: 1em;
+			left: -14px;
+			margin-top: -7px;
+			margin-left: 0;		
+			border-top-color: transparent;
+			border-left-color: transparent;
+			border-right-color: #444;
+			border-bottom-color: transparent;
+		}
+	}
+
+	input:invalid + .hint:before {
+		border-right-color: red;
+		border-bottom-color: transparent;
+	}
+}
+
+//
+// Form Buttons
+//
+
+@mixin form-buttons() {
+	text-align: left;
+	clear: both;
+}

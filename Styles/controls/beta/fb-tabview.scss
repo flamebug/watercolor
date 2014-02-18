@@ -1,0 +1,84 @@
+/*
+=========================================
+flamebug:TabView
+=========================================
+*/
+
+.fb-tabview-tabs {
+	list-style: none;
+	height: 25px;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+width: -webkit-fit-content;
+       width: -moz-fit-content;
+            width: fit-content;
+	//outline: 1px solid red;
+}
+
+.fb-tabview-tabs > li {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	display: inline-block;
+	float: left;
+	background-color: rgba(0,0,0,0.01);
+	border: 1px solid $border-color;
+}
+
+.fb-tabview-tabs a,
+.fb-tabview-tabs a:link,
+.fb-tabview-tabs a:visited,
+.fb-tabview-tabs a:hover,
+.fb-tabview-tabs a:active {
+	display: block;
+	padding: 0 .75em;
+	height: 25px;
+	text-align: center;
+	text-decoration: none;
+	color: inherit;
+}
+
+.fb-tabview-tabs > li:active {background-color: #525252;}
+
+.fb-tabview-tabs > li:active a,
+.fb-tabview-tabs > li:active a:link,
+.fb-tabview-tabs > li:active a:visited,
+.fb-tabview-tabs > li:active a:hover,
+.fb-tabview-tabs > li:active a:active {
+	position: relative;
+	top: 1px;
+}
+
+.fb-tabview-tabs > li:target,
+.fb-tabview-tabs > li.active {
+	background-color: rgba(0,0,0,0.1);
+}
+
+.fb-tabview-tabs > li:target:active,
+.fb-tabview-tabs > li.active:active {
+	background-color: rgba(0,0,0,0.05);
+}
+
+.fb-tabview-tabs > li:target a,
+.fb-tabview-tabs > li:target a:link,
+.fb-tabview-tabs > li:target a:visited,
+.fb-tabview-tabs > li:target a:hover,
+.fb-tabview-tabs > li:target a:active
+.fb-tabview-tabs > li:active a,
+.fb-tabview-tabs > li:active a:link,
+.fb-tabview-tabs > li:active a:visited,
+.fb-tabview-tabs > li:active a:hover,
+.fb-tabview-tabs > li:active a:active {color: red; text-shadow: 0 1px 0 #444;}
+
+.fb-tabview-content {
+	list-style: none;
+	margin: -.25em auto 1em auto;
+	padding: 0;
+	background-color: rgba(0,0,0,0.01);
+	border: 1px solid $border-color;
+}
+
+.fb-tabview-content > li {
+	display: block;
+	padding: 30px;
+}

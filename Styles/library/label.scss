@@ -1,0 +1,55 @@
+//
+// Label
+//
+
+@mixin label {
+	display: inline-block;
+	overflow: visible;
+	padding: 0 .75em;
+	
+	background-color: #999;
+	border-radius: .3em;
+
+	color: #fff;
+	text-decoration: none;
+
+	&:empty {
+		display: none;
+	}
+
+	a.&:hover {
+		background-color: #aaa;
+	}
+}
+
+@mixin label-primary {
+	background-color: #2a75d1;
+
+	a.&:hover {
+		background-color: #3a85e1;
+	}
+}
+
+@mixin label-positive {
+	background-color: #0eb249;
+
+	a.&:hover {
+		background-color: #1ec259;
+	}
+}
+
+@mixin label-warning {
+	background-color: #fb0;
+
+	a.&:hover {
+		background-color: #fa1;
+	}
+}
+
+@mixin label-negative {
+	background-color: #b44;
+
+	a.&:hover {
+		background-color: #c55;
+	}
+}

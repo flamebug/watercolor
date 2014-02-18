@@ -1,0 +1,57 @@
+//
+// Structural Grid
+//
+
+$column-width: 3.5rem;
+$gutter-width: 1.5rem;
+
+//
+// Typographic Grid
+//
+
+$base-font-size: 100;
+$line-height:  1.625;
+
+//
+// Body Typography
+//
+
+$body-font-size: 1;
+$body-font-color: #6e787b;
+$body-font-family: 'Roboto', sans-serif;
+$body-font-weight: 300;
+$body-font-smoothing: subpixel-antialiased;
+$body-text-rendering: optimizeLegibility;
+
+//
+// Header Typography
+//
+
+$h1-font-size: 3.4375;
+$h2-font-size: 2.625;
+$h3-font-size: 2.125;
+$h4-font-size: 1.625;
+$h5-font-size: 1.3125;
+$h6-font-size: 1;
+$header-font-color: #4a5c62;
+$header-font-family: 'Roboto', sans-serif;
+$header-font-weight: 100;
+
+//
+// Monospace Typography
+//
+
+$mono-font-size: 1;
+$mono-font-color: #6e787b;
+$mono-font-family: monospace, sans-serif;
+$mono-font-weight: normal;
+
+//
+// Common Styles
+//
+
+$border-color: #eee;
+$link-color: #25AAE1;
+$link-hover-color: #058Ac1;
+$input-color: #777;
+$input-focus-color: #000;

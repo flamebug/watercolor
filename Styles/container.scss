@@ -1,0 +1,54 @@
+/*
+base/container.scss
+*/
+
+@import "library/grid.scss";
+
+//
+// 4 column layout (default)
+//
+
+.container {
+	@include page-width(4);
+	margin: 0 auto;
+}
+
+//
+// 6 column layout
+//
+
+@media screen and (min-width: 30rem) {
+	.container {
+		@include page-width(6);
+	}
+}
+
+//
+// 8 column layout
+//
+
+@media screen and (min-width: 40rem) {
+	.container {
+		@include page-width(8);
+	}
+}
+
+//
+// 12 column layout
+//
+
+@media screen and (min-width: 60rem) {
+	.container {
+		@include page-width(12);
+	}
+}
+
+//
+// 16 column layout
+//
+
+@media screen and (min-width: 80rem) {
+	.container {
+		@include page-width(16);
+	}
+}

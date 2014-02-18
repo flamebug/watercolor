@@ -1,0 +1,43 @@
+@import "../global.scss";
+@import "../library/grid.scss";
+
+//
+// Padded Table
+//
+
+@mixin table-padded() {
+	th,
+	td {
+		padding-top: ceiling($body-line-height-px * 0.25 * 1px);
+		padding-bottom: floor($body-line-height-px * 0.25 * 1px);
+		padding-left: $line-height * 0.5em;
+		padding-right: $line-height * 0.5em;
+	}
+}
+
+//
+// Bordered Table
+//
+
+@mixin table-bordered() {
+	margin-top: (($body-line-height-px - 1) / $body-line-height-px) * $line-height * 1em;
+	margin-bottom: (($body-line-height-px - 1) / $body-line-height-px) * $line-height * 1em;
+	border: 1px solid $border-color;
+	border-left: 0;
+
+	th,
+	td {
+		border-left: 1px solid $border-color;
+	}
+}
+
+//
+// Striped Table
+//
+
+@mixin table-striped() {
+	tbody > tr:nth-child(odd) > td,
+	tbody > tr:nth-child(odd) > th {
+		background-color: rgba(0,0,0,0.01);
+	}
+}

@@ -1,0 +1,17 @@
+﻿//
+// css3 mixins
+//
+
+@import "css3.scss";
+
+//
+// clear-children
+//
+
+@mixin clear-children() {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}

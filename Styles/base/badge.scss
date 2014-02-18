@@ -1,0 +1,25 @@
+/*
+base/badge.scss
+*/
+
+@import "../library/badge.scss";
+
+.badge {
+	@include badge;
+
+	&.top-right {
+		@include badge-top-right;
+	}
+
+	&.top-left {
+		@include badge-top-left;
+	}
+
+	&.bottom-right {
+		@include badge-bottom-right;
+	}
+
+	&.bottom-left {
+		@include badge-bottom-left;
+	}
+}

@@ -1,0 +1,54 @@
+/*
+=========================================
+flamebug:ToolBarButton
+=========================================
+*/
+
+.fb-toolbarbutton {
+	vertical-align: middle;
+}
+
+.fb-toolbarbutton img {
+	vertical-align: -3px;
+}
+
+.fb-toolbarbutton span {
+	margin-left: .4em;
+	text-decoration: none;
+}
+
+.fb-toolbarbutton, .fb-toolbarbutton:link, .fb-toolbarbutton:visited, .fb-toolbarbutton:active {
+	display:inline-block;
+	padding: .375em .5em;
+  
+	vertical-align:middle;
+	text-align: left;
+
+	color: #888;
+}
+
+.fb-toolbarbutton:hover {
+	background: rgba(0,0,0,0.05);
+	border-radius: .3125em;
+	-moz-border-radius: .3125em;
+	-webkit-border-radius: .3125em;
+	color: #666; 
+}
+
+.fb-toolbarbutton:hover span {
+	color: #444; 
+}
+
+.fb-toolbarbutton[disabled], .fb-toolbarbutton[disabled]:link, .fb-toolbarbutton[disabled]:visited, .fb-toolbarbutton[disabled]:active {
+	display:inline-block;
+	padding: .375em .5em;
+
+	vertical-align:middle;
+	text-align: left;
+
+	color: #444;
+}
+
+.fb-toolbarbutton[disabled]:hover span {
+	text-decoration: none;
+}

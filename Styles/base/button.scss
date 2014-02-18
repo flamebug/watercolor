@@ -1,0 +1,47 @@
+/*
+base/button.scss
+*/
+
+@import "../library/button.scss";
+
+.button {
+	@include button;
+}
+
+.button,
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+	&.hero {
+		@include button-hero;
+	}
+
+	&.large {
+		@include button-large;
+	}
+
+	&.small {
+		@include button-small;
+	}
+
+	&.link {
+		@include button-link;
+	}
+
+	&.primary {
+		@include button-primary;
+	}
+
+	&.positive {
+		@include button-positive;
+	}
+
+	&.warning {
+		@include button-warning;
+	}
+
+	&.negative {
+		@include button-negative;
+	}
+}

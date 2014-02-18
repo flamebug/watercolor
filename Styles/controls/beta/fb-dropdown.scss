@@ -1,0 +1,109 @@
+/*
+=========================================
+flamebug:DropDown
+=========================================
+*/
+
+.fb-dropdown{
+	position: relative;
+	display: inline;
+	margin: 0 .25em;
+	padding: .4375em .625em;
+
+	background: #fff;
+	background: rgba(255,255,255,.75);
+	-webkit-border-radius: .25em;
+	-moz-border-radius: .25em;
+	border-radius: .25em;
+
+	color: #444;
+	text-decoration: none;
+	font-size: .875em;
+}
+
+.fb-dropdown:hover, .fb-dropdown:focus{
+	color: #f2f2f2;
+	background: rgb(150,160,170);
+	background: rgba(100,110,120,0.5);
+
+	-webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.3);
+	-mox-box-shadow: 0 3px 3px rgba(0,0,0,0.3);
+	box-shadow: 0 3px 3px rgba(0,0,0,0.3);
+}
+
+.fb-dropdowntrigger{ 
+	display: inline;
+	cursor: pointer;
+	padding: .5em 1.25em .5em 0;
+	background: url(../image/toggle_down_dark.png) 100% 50% no-repeat;
+}
+
+.fb-dropdown:hover .fb-dropdowntrigger{ 
+	background: url(../image/toggle_down_light.png) 100% 50% no-repeat;
+}
+
+.fb-dropdown.open{
+	background:#f2f2f2;
+
+	-webkit-border-bottom-left-radius: 0;
+	-moz-border-radius-bottomleft: 0;
+	border-radius-bottom-left: 0;
+
+	-webkit-border-bottom-right-radius: 0;
+	-moz-border-radius-bottomright: 0;
+	border-radius-bottom-right: 0;
+
+	-webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.3);
+	-mox-box-shadow: 0 3px 3px rgba(0,0,0,0.3);
+	box-shadow: 0 3px 3px rgba(0,0,0,0.3);
+}
+
+.fb-dropdown.open .fb-dropdowntrigger{
+	color:#333;
+	background:url(../image/toggle_up_dark.png) 100% 50% no-repeat;
+}
+
+.fb-dropdown.open .fb-dropdowntrigger:hover{
+	color:#666;
+}
+
+.fb-dropdownpanel{
+	display: none;
+	position: absolute;
+	top: 100%;
+	right: 0;
+
+	margin: 0;
+	padding: .5em 1em;
+
+	border: .4375em solid #f2f2f2;
+	-webkit-border-radius: .4375em;
+	-moz-border-radius: .4375em;
+	border-radius: .4375em;
+
+	-webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0 3px 3px rgba(0,0,0,0.3);
+	box-shadow: 0 3px 3px rgba(0,0,0,0.3);
+
+	background: #fff;
+
+	color: #444;
+	text-align: left;
+	z-index: 100;
+}
+
+.fb-dropdownpanelleft {
+	left: 0;
+
+	-moz-border-radius-topleft: 0;
+	-webkit-border-top-left-radius: 0;
+	border-top-left-radius: 0;
+}
+
+.fb-dropdownpanelright {
+	right: 0;
+
+	-moz-border-radius-topright: 0;
+	-webkit-border-top-right-radius: 0;
+	border-top-right-radius: 0;
+}

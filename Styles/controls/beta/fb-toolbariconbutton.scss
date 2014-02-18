@@ -1,0 +1,60 @@
+/*
+=========================================
+flamebug:ToolBarIconButton
+=========================================
+*/
+
+.fb-toolbariconbutton {
+	display: inline-block;
+	text-align: center;
+	font-size: .75em;
+	padding: .25em .25em 0 .25em;
+	margin: .25em 0;
+	border: 1px solid transparent;
+	vertical-align: middle;
+}
+
+.fb-toolbariconbutton img {
+	display: block;
+	max-width: 100%;
+	vertical-align: middle;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.fb-toolbariconbutton span img {
+	display: inline;
+}
+
+.fb-toolbariconbutton span:first-child {
+	display: block;
+}
+
+.fb-toolbariconbutton span:last-child {
+	display: inline-block;
+	margin: .25em auto 0 auto;
+	padding: 0;
+}
+
+.fb-toolbariconbutton, .fb-toolbariconbutton:link, .fb-toolbariconbutton:visited, .fb-toolbariconbutton:active {
+	color: #666;
+	text-align: center;
+}
+
+.fb-toolbariconbutton:hover {
+	background: rgba(0,0,0,0.05);
+	border-radius: .3125em;
+	-moz-border-radius: .3125em;
+	-webkit-border-radius: .3125em;
+	border: 1px solid #c0c0c0;
+	color: #666; 
+}
+
+.fb-toolbariconbutton[disabled] {
+	opacity: 0.3;
+	cursor: default;
+}
+
+.fb-toolbariconbutton.aspNetDisabled {
+	opacity: 0.5;
+}

@@ -1,0 +1,32 @@
+/*
+=========================================
+flamebug:Notification
+=========================================
+*/
+
+.fb-notification {
+	display: block;
+	text-align: center;
+	margin: .625em 0;
+	padding: .125em;
+	border: 0.0625em solid #ccc6df;
+	background: #ffffd8;
+
+	border-radius: .25em;
+	-moz-border-radius: .25em;
+	-webkit-border-radius: .25em;
+}
+
+.fb-notification_status {
+	padding-left: 1.5em; 
+	text-align: left;
+	background: url(./image/controls/notification_information.png) 0px 50% no-repeat;
+	color: #666;
+}
+
+.fb-notification_error {
+	padding-left: 1.5em; 
+	text-align: left;
+	background: url(./image/controls/notification_exclamation.png) 0px 50% no-repeat;
+	color: #A00;
+}

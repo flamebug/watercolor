@@ -1,0 +1,33 @@
+/*
+=========================================
+flamebug:ToolTip
+=========================================
+*/
+
+.fb-tooltip {
+	display: none;
+	position:absolute;
+	visibility:hidden;
+	z-index:1000;
+
+	width: 250px;
+	margin: 0;
+	padding: 1em;
+
+	border-radius: 1em;
+	-moz-border-radius: 1em;
+	-webkit-border-radius: .5em;
+	background: rgba(170, 180, 190, 0.9);
+
+	background: rgba(240,242,245,0.75);
+
+	font-size: .825em;
+	color:#888;
+	text-align:left;
+}
+
+*:hover > .fb-tooltip {
+	display: inline;
+	visibility:visible;
+	cursor:pointer;
+}

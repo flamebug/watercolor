@@ -1,0 +1,142 @@
+/*
+=========================================
+fb-modal
+=========================================
+*/
+
+//
+// modal overlay
+//
+
+.fb-modal-overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	opacity: 0;
+	background: rgba(0,0,0,0.6);
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s; /* fix for Safari Windows, all doesnt work stupidly */
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.visible.fb-modal-overlay {
+	opacity: 1;
+	visibility: visible;
+}
+
+//
+// modal container
+//
+
+.fb-modal-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2000;
+	overflow: hidden;
+	text-align: center;
+	cursor: pointer;
+
+	visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.fb-modal-container:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.visible.fb-modal-container {
+	visibility: visible;
+	overflow: auto;
+	//-webkit-overflow-scrolling: touch; /* while this is nice, it makes the modal flicker during transitions */
+}
+
+//
+// modal content
+//
+
+.fb-modal {
+	position: relative;
+	display: inline-block;
+	box-sizing: border-box;
+	max-width: 100%;
+	margin: 0 auto;
+
+	background-color: #fcfcfc;
+	box-shadow: 0 0 25px rgba(0,0,0,0.5);
+	color: #222;
+	text-align: left;
+	vertical-align: middle;
+	cursor: auto;
+}
+
+//
+// modal close button
+//
+
+.fb-modal-close {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 36px;
+	height: 36px;
+	line-height: 36px;
+	padding: 10px 10px 10px 12px;
+	cursor: pointer;
+	z-index: 1102;
+
+	font-size: 30px;
+	font-style: normal;
+	font-family: Arial,Baskerville,monospace;
+	text-decoration: none;
+	text-align: center;
+	color: #666;
+
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	-o-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+}
+
+.fb-modal-close:hover {
+	color: #bbb;
+}
+
+//
+// modal effects
+//
+
+/* DEFAULT Effect 1: Fade in and scale up */
+.fb-modal  {
+	opacity: 0;
+	-webkit-transform: scale(0.7);
+	-moz-transform: scale(0.7);
+	-ms-transform: scale(0.7);
+	-o-transform: scale(0.7);
+	transform: scale(0.7);
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s; /* fix for Safari Windows, all doesnt work stupidly */
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.visible .fb-modal  {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}

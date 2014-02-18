@@ -1,0 +1,29 @@
+/*
+=========================================
+flamebug:Disclosure
+=========================================
+*/
+
+.fb-disclosure:after {
+	display: inline-block;
+	content: '';
+	height: 0;
+	width: 0;
+	margin-left: .5em;
+	border: 5px solid transparent;
+	border-left-color: #999;
+	margin-bottom: 3px;
+	vertical-align: middle;
+}
+
+.fb-disclosure.open:after {
+	border-top-color: #999;
+	border-left-color: transparent;
+	margin-bottom: 0;
+}
+
+.fb-disclosure.closed:after {
+	border-top-color: transparent;
+	border-left-color: #999;
+	margin-bottom: 3px;
+}
