@@ -1,0 +1,35 @@
+////
+///
+/// Hint element
+///
+/// @group hint
+/// @author Clint Kolodziej
+///
+////
+
+@import "../extends/hint";
+
+///
+/// Hint element
+///
+/// @parameter {string} $options - Define an element as a hint with specified options. Options: `block`, `inline`, `aligned`
+///
+/// @example scss - Usage
+///		.hint {
+///			@include hint(aligned);
+///		}
+///
+
+@mixin hint($type: block) {
+    @extend %hint;
+
+    @if $type == block {
+        @extend %hint-block;
+    }
+    @else if $type == inline {
+        @extend %hint-inline;
+    }
+    @else if $type == aligned {
+        @extend %hint-aligned;
+    }
+}

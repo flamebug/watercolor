@@ -1,0 +1,64 @@
+//
+// Modules
+//
+
+@import "../../modules/grid";
+
+//
+// Text
+//
+
+body {
+	line-height: $line-height;
+	font-size: $body-font-size * 1em;
+	font-family: $body-font-family;
+	font-weight: $body-font-weight;
+	color: $body-font-color;
+}
+
+p {
+	margin-top: $line-height * 1em;
+	margin-bottom: $line-height * 1em;
+}
+
+h1 {
+	@include font-size($h1-font-size);
+	font-family: $h1-font-family;
+	font-weight: $h1-font-weight;
+	color: $h1-font-color;
+}
+
+h2 {
+	@include font-size($h2-font-size);
+	font-family: $h2-font-family;
+	font-weight: $h2-font-weight;
+	color: $h2-font-color;
+}
+
+h3 {
+	@include font-size($h3-font-size);
+	font-family: $h3-font-family;
+	font-weight: $h3-font-weight;
+	color: $h3-font-color;
+}
+
+h4 {
+	@include font-size($h4-font-size);
+	font-family: $h4-font-family;
+	font-weight: $h4-font-weight;
+	color: $h4-font-color;
+}
+
+h5 {
+	@include font-size($h5-font-size);
+	font-family: $h5-font-family;
+	font-weight: $h5-font-weight;
+	color: $h5-font-color;
+}
+
+h6 {
+	@include font-size($h6-font-size);
+	font-family: $h6-font-family;
+	font-weight: $h6-font-weight;
+	color: $h6-font-color;
+}

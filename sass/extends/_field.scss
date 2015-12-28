@@ -1,0 +1,82 @@
+////
+///
+/// Field placeholders
+///
+/// @group field
+/// @author Clint Kolodziej
+///
+////
+
+@import "../modules/grid";
+@import "../defaults/field";
+
+///
+/// Field default
+///
+
+%field {
+	position: relative;
+	display: block;
+	
+	& label {
+		display: block;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+}
+
+//
+// Field shown in block display
+//
+
+%field-block {
+	float: none;
+	margin: $line-height * 1em 0;
+	padding: 0;
+
+	& label {
+		position: relative;
+		top: auto;
+		left: auto;
+		width: auto;
+	}
+}
+
+//
+// Field shown in inline display
+//
+
+%field-inline {
+	float: left;
+	margin: $line-height * 1em $line-height * 1em 0 0;
+	padding: 0;
+
+	&:last-child {
+		margin-bottom: $line-height * 1em;
+	}
+
+	& label {
+		position: relative;
+		top: auto;
+		left: auto;
+		width: auto;
+	}
+}
+
+//
+// Field shown in aligned display
+//
+
+%field-align {
+	float: none;
+	margin: $line-height * 1em 0;
+	padding: 0 0 0 25%;
+
+	& label {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 25%;
+	}
+}

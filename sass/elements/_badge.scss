@@ -1,0 +1,41 @@
+////
+///
+/// Badge element
+///
+/// @group badge
+/// @author Clint Kolodziej
+///
+////
+
+@import "../extends/badge";
+
+///
+/// Badge element
+///
+/// @parameter {string} $options - Define an element as a badge with specified options. Options: `top-right`, `top-left`, `bottom-right`, `bottom-left`
+///
+/// @example scss - Usage
+///		.badge {
+///			@include badge(top-left);
+///		}
+///
+
+@mixin badge($options...) {
+    @extend %badge;
+
+    @each $option in $options {
+
+        @if $option == top-right {
+            @extend %badge-top-right
+        }
+        @else if $option == top-left {
+            @extend %badge-top-left
+        }
+        @else if $option == bottom-right {
+            @extend %badge-bottom-right
+        }
+        @else if $option == bottom-left {
+            @extend %badge-bottom-left
+        }
+    }
+}

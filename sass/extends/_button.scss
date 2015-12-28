@@ -1,0 +1,193 @@
+////
+///
+/// Button placeholders
+///
+/// @group button
+/// @author Clint Kolodziej
+///
+////
+
+@import "../modules/grid";
+@import "../defaults/button";
+
+///
+/// Button default
+///
+
+%button {
+	display: inline-block;
+	position: relative;
+	padding: 0 .75em;
+	margin: -1px 0;
+
+	border-radius: $button-border-radius;
+	box-shadow: $button-box-shadow;
+
+	font-size: inherit;
+	font-weight: inherit;
+	text-decoration: none;
+	text-shadow: $button-text-shadow;
+
+	line-height: $line-height;
+
+	cursor: pointer;
+	text-align: center;
+	white-space: nowrap;
+	user-select: none;
+
+	color: $button-color;
+	border: 1px solid $button-border-color;
+	background: $button-background;
+
+	&:hover {
+		color: $button-hover-color;
+		border: 1px solid $button-hover-border-color;
+		background: $button-hover-background;
+	}
+
+	&:active {
+		top: 1px;
+	}
+
+	img {
+		vertical-align: middle;
+	}
+
+	span {
+		text-decoration: none;
+		vertical-align: middle;
+		white-space: nowrap;
+	}
+
+	img + span {
+		margin-left: .4em;
+	}
+
+	&[disabled] {
+		opacity: 0.5;
+		cursor: not-allowed;
+	}
+
+	&[disabled]:active {
+		top: 0;
+	}
+}
+
+///
+/// Button hero sized
+///
+
+%button-hero {
+	font-size: 1.5em;
+	padding: 0.375em 1.5em;
+}
+
+///
+/// Button large sized
+///
+
+%button-large {
+	font-size: 1em;
+	padding: 0.375em 1.5em;
+}
+
+///
+/// Button small sized
+///
+
+%button-small {
+	font-size: .75em;
+}
+
+///
+/// Button displayed as a link
+///
+
+%button-link {
+	padding-left: 0;
+	padding-right: 0;
+	margin-left: .25em;
+	margin-right: .25em;
+
+	color: inherit !important;
+	text-shadow: inherit !important;
+	border: 0 !important;
+	background: none !important;
+	box-shadow: none !important;
+
+	&:hover {
+		text-decoration: underline;
+	}
+
+	&[disabled]:hover {
+		text-decoration: none;
+	}
+}
+
+///
+/// Button with primary coloring
+///
+
+%button-primary {
+	color: $button-primary-color;
+	text-shadow: $button-primary-text-shadow;
+	border-color: $button-primary-border-color;
+	background: $button-primary-background;
+
+	&:hover {
+		color: $button-primary-hover-color;
+		border-color: $button-primary-hover-border-color;
+		background: $button-primary-hover-background;
+	}
+}
+
+///
+/// Button with positive coloring
+///
+
+%button-positive {
+	color: $button-positive-color;
+	text-shadow: $button-positive-text-shadow;
+	border-color: $button-positive-border-color;
+	background: $button-positive-background;
+
+	&:hover {
+		color: $button-positive-hover-color;
+		border-color: $button-positive-hover-border-color;
+		background: $button-positive-hover-background;
+	}
+}
+
+///
+/// Button with warning coloring
+///
+
+%button-warning {
+	color: $button-warning-color;
+	text-shadow: $button-warning-text-shadow;
+	border-color: $button-warning-border-color;
+	background: $button-warning-background;
+
+	&:hover {
+		color: $button-warning-hover-color;
+		border-color: $button-warning-hover-border-color;
+		background: $button-warning-hover-background;
+	}
+}
+
+///
+/// Button with negative coloring
+///
+
+%button-negative {
+	color: $button-negative-color;
+	text-shadow: $button-negative-text-shadow;
+	border-color: $button-negative-border-color;
+	background: $button-negative-background;
+
+	&:hover {
+		color: $button-negative-hover-color;
+		border-color: $button-negative-hover-border-color;
+		background: $button-negative-hover-background;
+	}
+}

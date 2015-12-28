@@ -1,0 +1,23 @@
+//
+// Modules
+//
+
+@import "../../modules/grid";
+
+//
+// List
+//
+
+ul,
+ol,
+dl {
+	@include font-size(1);
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd + dt {
+	margin-top: $line-height * 1em;
+}

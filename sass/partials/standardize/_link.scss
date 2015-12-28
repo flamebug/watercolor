@@ -1,0 +1,19 @@
+//
+// Modules
+//
+
+@import "../../modules/grid";
+
+//
+// Link
+//
+
+a {
+	color: $link-color;
+	text-decoration: $link-text-decoration;
+	transition: $link-transition;
+
+	&:hover {
+		color: $link-hover-color;
+	}
+}

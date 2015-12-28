@@ -1,0 +1,49 @@
+////
+///
+/// Alert placeholders
+///
+/// @group alert
+/// @author Clint Kolodziej
+///
+////
+
+@import "../defaults/alert";
+
+///
+/// Alert default
+///
+
+%alert {
+	display: none;
+	padding: 8px 14px 8px 14px;						//TODO: adjust for vertical rhythm
+	margin-bottom: 20px;							//TODO: adjust for vertical rhythm
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);	//TODO: add variable (maybe)
+	background-color: $alert-background-color;
+	border: 1px solid $alert-border-color;
+	border-radius: .25em;
+	color: $alert-color;
+
+	&.show {
+		display: block;
+	}
+}
+
+///
+/// Alert success
+///
+
+%alert-success {
+	  color: $alert-success-color;
+	  background-color: $alert-success-background-color;
+	  border-color: $alert-success-border-color;
+}
+
+///
+/// Alert error
+///
+
+%alert-error {
+	  color: $alert-error-color;
+	  background-color: $alert-error-background-color;
+	  border-color: $alert-error-border-color;
+}

@@ -1,0 +1,126 @@
+////
+///
+/// Standardize default variables
+///
+/// @group elements
+/// @author Clint Kolodziej
+///
+////
+
+//
+// Border Defaults
+//
+
+$border-color: #eee !default;
+
+//
+// Text Defaults
+//
+
+$body-font-size: 1 !default;
+$body-font-color: #4e585b !default;
+$body-font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
+$body-font-weight: normal !default;
+
+$header-font-color: inherit !default;
+$header-font-family: $body-font-family !default;
+$header-font-weight: bold !default;
+
+$h1-font-size: 3.4375 !default;
+$h1-font-color: $header-font-color !default;
+$h1-font-family: $header-font-family !default;
+$h1-font-weight: $header-font-weight !default;
+
+$h2-font-size: 2.625 !default;
+$h2-font-color: $header-font-color !default;
+$h2-font-family: $header-font-family !default;
+$h2-font-weight: $header-font-weight !default;
+
+$h3-font-size: 2.125 !default;
+$h3-font-color: $header-font-color !default;
+$h3-font-family: $header-font-family !default;
+$h3-font-weight: $header-font-weight !default;
+
+$h4-font-size: 1.625 !default;
+$h4-font-color: $header-font-color !default;
+$h4-font-family: $header-font-family !default;
+$h4-font-weight: $header-font-weight !default;
+
+$h5-font-size: 1.3125 !default;
+$h5-font-color: $header-font-color !default;
+$h5-font-family: $header-font-family !default;
+$h5-font-weight: $header-font-weight !default;
+
+$h6-font-size: 1 !default;
+$h6-font-color: $header-font-color !default;
+$h6-font-family: $header-font-family !default;
+$h6-font-weight: $header-font-weight !default;
+
+$mono-font-size: 1 !default;
+$mono-font-color: inherit !default;
+$mono-font-family: monospace, sans-serif !default;
+$mono-font-weight: normal !default;
+
+$pre-border-width: 1px !default;
+$pre-border-style: solid !default;
+$pre-border-color: $border-color !default;
+$pre-border-radius: 0 !default;
+$pre-background-color: rgba(0,0,0,0.01) !default;
+
+$code-border-width: 1px !default;
+$code-border-style: solid !default;
+$code-border-color: $border-color !default;
+$code-border-radius: 0 !default;
+$code-background-color: rgba(0,0,0,0.01) !default;
+
+//
+// Link Defaults
+//
+
+$link-color: #25AAE1 !default;
+$link-text-decoration: none !default;
+$link-transition: all 0.1s linear !default;
+$link-hover-color: #058Ac1 !default;
+
+//
+// Form Defaults
+//
+
+$input-border-width: 1px !default;
+$input-border-style: solid !default;
+$input-border-color: $border-color !default;
+$input-border-radius: .2em !default;
+$input-background-color: #fff !default;
+$input-color: #777 !default;
+$input-focus-color: #000 !default;
+$input-invalid-border-color: red !default;
+
+//
+// Image Defaults
+//
+
+$img-border-color: $border-color !default;
+
+//
+// Divider Defaults
+//
+
+$hr-border-color: $border-color !default;
+
+//
+// Quote Defaults
+//
+
+$quote-border-width: .25em !default;
+$quote-border-style: solid !default;
+$quote-border-color: $border-color !default;
+$quote-border-radius: 0 !default;
+
+//
+// Table Defaults
+//
+
+$table-cell-border-width: 1px !default;
+$table-cell-border-style: solid !default;
+$table-cell-border-color: $border-color !default;
+$table-nested-background-color: #fff !default;

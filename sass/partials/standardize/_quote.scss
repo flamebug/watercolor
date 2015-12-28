@@ -1,0 +1,19 @@
+//
+// Modules
+//
+
+@import "../../modules/grid";
+
+//
+// Quote
+//
+
+blockquote {
+	margin-top: $line-height * 1em;
+	margin-bottom: $line-height * 1em;
+	padding-left: 1em;
+	border-left-width: $quote-border-width;
+	border-left-style: $quote-border-style;
+	border-left-color: $quote-border-color;
+	border-radius: $quote-border-radius;
+}

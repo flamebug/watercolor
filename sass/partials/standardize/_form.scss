@@ -1,0 +1,62 @@
+//
+// Modules
+//
+
+@import "../../modules/grid";
+
+//
+// Form
+//
+
+fieldset {
+	margin: $line-height - em(1) * 1em 0;		//subtract 1px border
+	padding: 0 $line-height * 1em;
+	border-color: $border-color;
+}
+
+//
+// Text Inputs
+//
+
+textarea,
+select,
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="file"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"] {
+	box-sizing: border-box;
+	margin: -1px 0;
+	padding: 0 .375em;
+	border-width: $input-border-width;
+	border-style: $input-border-style;
+	border-color: $input-border-color;
+	border-radius: $input-border-radius;
+	background-color: $input-background-color;
+	font: inherit;
+	color: $input-color;
+
+	&:focus {
+		color: $input-focus-color;
+	}
+}
+
+input:invalid,
+textarea:invalid {
+	border-color: $input-invalid-border-color;
+}
+
+select {
+	//unlike other form inputs a select doesn't use line-height, we need to add padding to get it there
+	padding: em(2) * 1em 0 em(1) * 1em .375em;
+}

@@ -1,0 +1,35 @@
+////
+///
+/// Alert element
+///
+/// @group alert
+/// @author Clint Kolodziej
+///
+////
+
+@import "../extends/alert";
+
+///
+/// Alert element
+///
+/// @parameter {string} $options - Define an element as an alert with specified options. Options: `success`, `error`
+///
+/// @example scss - Usage
+///		.alert {
+///			@include alert(success);
+///		}
+///
+
+@mixin alert($options...) {
+    @extend %alert;
+
+    @each $option in $options {
+
+        @if $option == success {
+            @extend %alert-success;
+        }
+        @else if $option == error {
+            @extend %alert-error;
+        }
+    }
+}

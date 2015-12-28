@@ -1,0 +1,53 @@
+//
+// Modules
+//
+
+@import "../../modules/grid";
+
+//
+// Table
+//
+
+table {
+	max-width: 100%;
+	width: 100%;
+	margin-top: $line-height * 1em;
+	margin-bottom: $line-height * 1em;
+	border-collapse: separate;
+
+	th,
+	td {
+		padding: 0 $line-height * 0.5em;
+		line-height: $line-height - em(1);			//subtract 1px border
+		border-top-width: $table-cell-border-width;
+		border-top-style: $table-cell-border-style;
+		border-top-color: $table-cell-border-color;
+		text-align: left;
+		vertical-align: top;
+	}
+
+	th {
+		font-weight: bold;
+		vertical-align: bottom;
+	}
+
+	caption + thead tr:first-child th,
+	caption + thead tr:first-child td,
+	colgroup + thead tr:first-child th,
+	colgroup + thead tr:first-child td,
+	thead:first-child tr:first-child th,
+	thead:first-child tr:first-child td {
+		line-height: $line-height;
+		border-top: 0;
+	}
+
+	tbody + tbody {
+		border-top-width: $table-cell-border-width * 2;
+		border-top-style: $table-cell-border-style;
+		border-top-color: $table-cell-border-color;
+	}
+
+	table {
+		background-color: $table-nested-background-color;
+	}
+}

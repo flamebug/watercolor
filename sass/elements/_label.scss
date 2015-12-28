@@ -1,0 +1,41 @@
+////
+///
+/// Label element
+///
+/// @group label
+/// @author Clint Kolodziej
+///
+////
+
+@import "../extends/label";
+
+///
+/// Label element
+///
+/// @parameter {string} $options - Define an element as a label with specified options. Options: `primary`, `positive`, `warning`, `negative`
+///
+/// @example scss - Usage
+///		.label {
+///			@include label(primary);
+///		}
+///
+
+@mixin label($options...) {
+    @extend %label;
+
+    @each $option in $options {
+
+        @if $option == primary {
+            @extend %label-primary
+        }
+        @else if $option == positive {
+            @extend %label-positive
+        }
+        @else if $option == warning {
+            @extend %label-warning
+        }
+        @else if $option == negative {
+            @extend %label-negative
+        }
+    }
+}

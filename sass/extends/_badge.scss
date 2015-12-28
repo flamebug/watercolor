@@ -1,0 +1,89 @@
+////
+///
+/// Badge placeholders
+///
+/// @group badge
+/// @author Clint Kolodziej
+///
+////
+
+@import "../defaults/badge";
+
+///
+/// Badge default
+///
+
+%badge {
+	display: inline-block;
+	overflow: visible;
+	padding: $badge-padding;
+
+	position: absolute;
+	top: $badge-offset;
+	bottom: auto;
+	right: $badge-offset;
+	left: auto;
+	z-index: 1;
+
+	background-color: $badge-background-color;
+	border: $badge-border;
+	box-shadow: $badge-box-shadow;
+	border-radius: $badge-border-radius;
+
+	color: $badge-color !important;			/* prevent inheriting link colors */
+	text-shadow: $badge-text-shadow;
+	text-decoration: none;
+	font-size: $badge-font-size;
+
+	&:empty {
+		display: none;
+	}
+}
+
+///
+/// Badge top right placement
+///
+
+%badge-top-right {
+	position: absolute;
+	top: $badge-offset;
+	bottom: auto;
+	right: $badge-offset;
+	left: auto;
+}
+
+///
+/// Badge top left placement
+///
+
+%badge-top-left {
+	position: absolute;
+	top: $badge-offset;
+	bottom: auto;
+	right: auto;
+	left: $badge-offset;
+}
+
+///
+/// Badge bottom right placement
+///
+
+%badge-bottom-right {
+	position: absolute;
+	top: auto;
+	bottom: $badge-offset;
+	right: $badge-offset;
+	left: auto;
+}
+
+///
+/// Badge bottom left placement
+///
+
+%badge-bottom-left {
+	position: absolute;
+	top: auto;
+	bottom: $badge-offset;
+	right: auto;
+	left: $badge-offset;
+}

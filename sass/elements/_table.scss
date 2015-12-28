@@ -1,0 +1,37 @@
+////
+///
+/// Table element
+///
+/// @group table
+/// @author Clint Kolodziej
+///
+////
+
+@import "../extends/table";
+
+///
+/// Table element
+///
+/// @parameter {string} $options - Define an element as a table with specified options. Options: `padded`, `bordered`, `striped`
+///
+/// @example scss - Usage
+///		table {
+///			@include table(padded, bordered, striped);
+///		}
+///
+
+@mixin table($options...) {
+
+    @each $option in $options {
+
+        @if $option == padded {
+            @extend %table-padded
+        }
+        @else if $option == bordered {
+            @extend %table-bordered
+        }
+        @else if $option == striped {
+            @extend %table-striped
+        }
+    }
+}

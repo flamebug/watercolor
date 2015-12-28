@@ -1,7 +1,16 @@
 {
   "name": "watercolor",
   "version": "0.0.0",
-  "description": "Watercolor is a website design framework to take the pain out of making great looking, semantic, responsive websites. With Watercolor we believe in semantic, simple HTML code so we don't emit any classes into your stylesheets. Everything is opt-in so you can keep your website lean and fast.",
+  "homepage": "http://watercolor.flamebug.com",
+  "description": "Watercolor is a website design framework to take the pain out of making great looking, semantic, responsive websites.",
+  "authors": [
+	  "Clint Kolodziej"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flamebug/watercolor.git"
+  },
   "keywords": [
     "sass",
     "scss",
@@ -12,16 +21,7 @@
     "tables",
     "typography"
   ],
-  "authors": [
-    "Clint Kolodziej"
-  ],
-  "license": "MIT",
-  "homepage": "http://watercolor.flamebug.com",
   "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
+    "**/.*"
   ]
 }

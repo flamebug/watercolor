@@ -1,0 +1,54 @@
+////
+///
+/// Grid default variables
+///
+/// @group grid
+/// @author Clint Kolodziej
+///
+////
+
+///
+/// Width of the column items
+///
+/// @type number
+///
+
+$column-width: 3.5rem !default;
+
+///
+/// Width of the gutter on column items
+///
+/// @type number
+///
+
+$gutter-width: 1.5rem !default;
+
+///
+/// Base font size to be used in grid calculations
+///
+/// @type number
+///
+
+$base-font-size: 1 !default;
+
+///
+/// Line height to be used by default for body text
+///
+/// @type number
+///
+
+$line-height:  1.625 !default;
+
+///
+/// Breakpoints that are used with the container and breakpoint mixins
+///
+/// @type map
+///
+
+$breakpoints: (
+	default: 4,
+	small: 6,
+	medium: 8,
+	large: 12,
+	extra-large: 16
+) !default;

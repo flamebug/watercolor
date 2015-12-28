@@ -1,0 +1,122 @@
+﻿//
+// Defaults
+//
+
+@import "../defaults/grid";
+
+//
+// Set the number of columns an element spans on the grid
+//
+
+@mixin column($cols: max, $prefix: 0, $suffix: 0) {
+	
+	@if $cols == max {
+		display: block;
+		float: none;
+	}
+	@else {
+		display: inline;
+		float: left;
+		width: $cols * ($column-width + $gutter-width) - $gutter-width;	
+	}
+	
+	@include column-prefix($prefix);
+	@include column-suffix($suffix);
+}
+
+//
+// Set the number of empty columns that should prefix the element on the grid
+//
+
+@mixin column-prefix($cols) {
+	margin-left: ($cols * ($column-width + $gutter-width)) + ($gutter-width / 2);
+}
+
+//
+// Set the number of empty columns that should follow the element on the grid
+//
+
+@mixin column-suffix($cols) {
+	margin-right: ($cols * ($column-width + $gutter-width)) + ($gutter-width / 2);
+}
+
+//
+// Build the container based on the breakpoint settings
+//
+
+@mixin container() {
+	margin: 0 auto;
+
+	@each $size, $cols in $breakpoints {
+				
+		@if $size == default {
+			width: $cols * ($column-width + $gutter-width);
+		}
+		@else {
+			@include breakpoint($size) {
+				width: $cols * ($column-width + $gutter-width);
+			}
+		}
+	}	
+}
+
+//
+// Insert the given content within a media query given the breakpoint size
+//
+
+@mixin breakpoint($point) {
+	$break: ($column-width + $gutter-width) * map-get($breakpoints, $point) + $gutter-width;
+	
+	@media screen and (min-width: $break) {
+		@content;
+	}
+}
+
+//
+// clear any children within the element
+//
+
+@mixin clear-children() {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+//
+// Define the font styles that position the font within the typographic grid
+//
+
+@mixin font-size($size) {
+	font-size: $size * 1em;
+	line-height: line-height($size);
+	margin-top: $line-height / $size * 1em;
+	margin-bottom: $line-height / $size * 1em;
+}
+
+//
+// Calculate the line height that will maintain vertical rhythm for the font size
+//
+
+@function line-height($size) {
+	$lines-needed: ceil($size / $line-height);
+
+	@return ($line-height / $size * $lines-needed);
+}
+
+//
+// Convert Pixels to Em units (unitless)
+//
+
+@function em($pixels, $base: $base-font-size) {
+	@return $pixels / ($base * 16);
+}
+
+//
+// Convert Em units to Pixels (unitless)
+//
+
+@function px($ems, $base: $base-font-size) {
+	@return $ems * $base * 16;
+}

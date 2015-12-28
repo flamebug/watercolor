@@ -1,0 +1,18 @@
+//
+// Modules
+//
+
+@import "../../elements/button";
+
+//
+// Button
+//
+
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+
+	@include button;
+
+}

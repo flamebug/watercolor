@@ -1,0 +1,50 @@
+////
+///
+/// Button default variables
+///
+/// @group elements
+/// @author Clint Kolodziej
+///
+////
+
+$button-border-radius: .25em !default;
+$button-box-shadow: inset 0 1px rgba(255,255,255,0.4), 0 1px .2em rgba(0,0,0,0.1) !default;
+$button-color: #333 !default;
+$button-text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) !default;
+$button-border-color: #bbb !default;
+$button-background: linear-gradient(to bottom, #eee 0%, #ddd 100%) !default;
+$button-hover-color: #444 !default;
+$button-hover-border-color: #bbb !default;
+$button-hover-background: linear-gradient(to bottom, #e8e8e8 0%, #d8d8d8 100%) !default;
+
+$button-primary-color: #fcfcfc !default;
+$button-primary-text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3) !default;
+$button-primary-border-color: #27587a !default;
+$button-primary-background: linear-gradient(to bottom, #4da5e8 0%,#2a75d1 100%) !default;
+$button-primary-hover-color: #fff !default;
+$button-primary-hover-border-color: #2b5c7e !default;
+$button-primary-hover-background: linear-gradient(to bottom, #51a9ec 0%, #2e79d5 100%) !default;
+
+$button-positive-color: #fcfcfc !default;
+$button-positive-text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3) !default;
+$button-positive-border-color: #277a58 !default;
+$button-positive-background: linear-gradient(to bottom, #2ed269 0%, #0eb249 100%) !default;
+$button-positive-hover-color: #fff !default;
+$button-positive-hover-border-color: #2b7e5c !default;
+$button-positive-hover-background: linear-gradient(to bottom, #32d66d 0%, #12b64d 100%) !default;
+
+$button-warning-color: #fcfcfc !default;
+$button-warning-text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3) !default;
+$button-warning-border-color: #c80 !default;
+$button-warning-background: linear-gradient(to bottom, #fb0 0%, #e8a000 100%) !default;
+$button-warning-hover-color: #fff !default;
+$button-warning-hover-border-color: #c90 !default;
+$button-warning-hover-background: linear-gradient(to bottom, #ffbf00 0%, #e8a400 100%) !default;
+
+$button-negative-color: #fcfcfc !default;
+$button-negative-text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3) !default;
+$button-negative-border-color: #7a2758 !default;
+$button-negative-background: linear-gradient(to bottom, #d84e49 0%, #b82e29 100%) !default;
+$button-negative-hover-color: #fff !default;
+$button-negative-hover-border-color: #7e2b5c !default;
+$button-negative-hover-background: linear-gradient(to bottom, #dc524d 0%, #bc322d 100%) !default;
